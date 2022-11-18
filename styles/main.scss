@@ -1,0 +1,2027 @@
+@import 'base/reset.scss';
+@import 'base/mixins.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    @include sizing (1440px, 700px);
+    margin: 0 auto;
+    .header{
+        @include sizing (1440px, 700px);
+        display: flex;
+        justify-content: space-between;
+        background-image: url(./images/Background.png);
+        background-size: cover;
+        padding: 46px 248px;
+        .header-logo {
+             font-family: 'Montserrat';
+             font-style: normal;
+             font-weight: 700;
+             font-size: 20px;
+             line-height: 24px;
+             color: #FFFFFF;
+             text-decoration: none;
+         }
+         .button-group{
+            margin-top: 4px;
+            margin-right: 42px;
+            .login {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    border-radius: 40px;
+                    padding: 7px 16px;
+                }
+                .signup{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    border: 2px solid white;
+                    border-radius: 40px;
+                    padding: 7px 16px;
+                }
+         }
+    }
+    .header-text {
+        margin: -475px 485px;
+        box-sizing: border-box;
+    
+        .header-text-heading {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            h1 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 52px;
+                line-height: 63px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-bottom: 28px;
+            }
+            .header-text-light {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+        }
+        .button-main {
+            @include sizing (225px, 40px);
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            background: #FF4E50;
+            border-radius: 40px;
+            padding: 12px 19px;
+            border: none;
+            margin-top: 33px;
+            margin-left: 123px;
+        }
+    }
+}
+main{
+    width: 1440px;
+    padding: 89px 250px 0;
+    .about{
+        text-align: center;
+        h2 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 32px;
+            color: #444444;
+            letter-spacing: 1px;
+        }
+        .about-steps{
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-between;
+        .about-steps_step1{
+            @include sizing (523px, 400px);
+            background-image: url(./images/Step\ 1\ image.png);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            box-sizing: border-box;
+            padding: 20px 25px;
+            border-radius: 4px;
+            .step-number{
+                @include sizing (70px, 20px);
+                background: #FF4E50;
+                border-radius: 40px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 2px;
+                color: #FFFFFF;
+                padding-top: 5px;
+            }
+            h3{
+                margin-top: 22px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 26px;
+                color: #FFFFFF;
+                text-align: start;
+            }
+            .about-steps-light-text{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 14px;
+                color: #E3E3E3;
+                margin-top: 10px;
+                padding-top: 15px;
+                text-align: start;
+            }
+           }
+           .about-steps_step2{
+                @extend .about-steps_step1;
+                background-image: url(./images/Step\ 2\ image.png);
+                margin-left: 20px;
+                .about-steps-light-text{
+                    margin-top: 4px;
+                }
+            }
+            .about-steps_step3{
+                @extend .about-steps_step2;
+                background-image: url(./images/Step\ 3\ image.png);
+                .about-steps-light-text {
+                        margin-top: 10px;
+                    }
+            }
+        }
+    }
+    .partners{
+        padding-top: 89px;
+        text-align: center;
+        h2 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 32px;
+            color: #444444;
+            letter-spacing: 1px;
+            }
+        .persons{
+            @include sizing (941px, 224px);
+            display: flex;
+            justify-content: space-between;
+            margin-top: 35px;
+            padding: 0;
+            .person1{
+               @include sizing (221px, 224px);
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               .avatar{
+                   @include sizing (120px, 120px);
+                   background-image: url(./images/avatar\ 1.png);
+                   background-size: cover;
+                   position: relative;
+                   z-index: 1;
+                }
+               .person-info{
+                   @include sizing (221px, 81px);
+                   margin-top: 20px;
+                   .name{
+                       @include sizing (221px, 18px);
+                       font-family: 'Montserrat';
+                       font-style: normal;
+                       font-weight: 700;
+                       font-size: 14px;
+                       line-height: 17px;
+                       color: #444444;
+                       margin-bottom: 20px;
+                    }
+                   .add-info{
+                       @include sizing (221px, 57px);
+                       font-family: 'Roboto';
+                       font-style: normal;
+                       font-weight: 300;
+                       font-size: 14px;
+                       line-height: 14px;
+                       color: #666666;
+                    }
+                }
+            }
+            .person2{
+                @extend .person1;
+                .avatar{
+                    background-image: url(./images/avatar\ 2.png);
+                }
+                margin-left: 19px;
+            }
+             .person3 {
+                 @extend .person2;
+                 .avatar {
+                     background-image: url(./images/avatar\ 3.png);
+                 }
+                 margin-left: 19px;
+                 .person-info{
+                    .add-info{
+                        padding-top: 5px;
+                    }
+                 }
+             }
+            .person4 {
+                @extend .person3;
+                .avatar {
+                    background-image: url(./images/avatar\ 4.png);
+                }
+                
+            }
+        }
+        .secondary-button {
+            @include sizing (180px, 40px);
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FF4E50;
+            background-color: #fff;
+            border-radius: 40px;
+            padding: 11px 19px;
+            border: 2px solid #FF4E50;
+            margin-top: 36px;
+        }
+    }
+    .activity{
+        @include sizing (940px, 1031px);
+        margin-top: 89px;
+        text-align: center;
+        h2 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 32px;
+            color: #444444;
+            letter-spacing: 1px;
+        }
+        .activity-pictures{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 35px;
+            .picture1{
+                @include sizing (300px, 310px);
+                background-image: url(./images/photo\ 1.png);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h4{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                }
+            }
+            .picture2{
+                @extend .picture1;
+                background-image: url(./images/photo\ 2.png);
+                margin-left: 20px;
+            }
+            .picture3 {
+                @extend .picture2;
+                background-image: url(./images/photo\ 3.png);
+                padding: 0 56px;
+            }
+            .picture4 {
+                @extend .picture1;
+                background-image: url(./images/photo\ 4.png);
+                margin-top: 20px;
+            }
+            .picture5 {
+                @extend .picture4;
+                @include sizing (620px, 310px);
+                background-image: url(./images/photo\ 5.png);
+                margin-left: 20px;
+            }
+            .picture6{
+                @extend .picture5;
+                background-image: url(./images/photo\ 6.png);
+                margin-left: 0;
+            }
+            .picture7{
+                @extend .picture4;
+                background-image: url(./images/photo\ 7.png);
+                margin-left: 20px;
+            }
+        }
+    }
+    .form{
+        @include sizing (482px, 265px);
+        text-align: center;
+        margin: 95px 228px 0;
+        h2 {
+           font-family: 'Montserrat';
+           font-style: normal;
+           font-weight: 700;
+           font-size: 26px;
+           line-height: 32px;
+           color: #444444;
+           letter-spacing: 1px;
+           margin-bottom: 53px;
+        }
+        .add-text{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 14px;
+            color: #666666;
+            margin-bottom: 25px;
+        }
+        .search-form{
+            width: 482px;
+            display: flex;
+            justify-content: space-between;
+            input {
+                width: 299px;
+                height: 40px;
+                box-sizing: border-box;
+                background: #FFFFFF;
+                border: 1px solid #D4D4D4;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+                border-radius: 3px;
+                padding-left: 15px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 16px;
+                color: #999999;
+            }
+            .main-button{
+                @include sizing (172px, 40px);
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                background: #FF4E50;
+                border-radius: 40px;
+                padding: 12px 19px;
+                border: none;
+            }
+        }
+    }
+}
+footer {
+    @include sizing (1440px, 260px);
+    margin: 0 auto;
+    padding: 36px 250px;
+    border-top: 2px solid #FF4E50;
+    display: flex;
+    justify-content: flex-start;
+    .footer-logo{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FF4E50;
+        text-decoration: none;
+    }
+    .company-nav{
+        width: 156px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        margin-top: 2px;
+        margin-left: 120px;
+        .text-bold{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #444444;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .text-light{
+            width: 156px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 26px;
+            color: #999999;
+            text-decoration: none;
+        }
+       
+    }
+        .partners-nav {
+                margin-top: 2px;
+                margin-left: 127px;
+            .text-bold {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #444444;
+                text-decoration: none;
+                margin-bottom: 10px;
+            }
+        }
+    
+        .designed-by {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2px;
+            margin-left: 292px;
+            .designed-by-text {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 1px;
+                color: #ccc;
+                margin-bottom: 7px;
+                align-self: flex-end;
+            }
+            .designed-by-image{
+                width: 110px;
+                height: 24px;
+                background-image: url(./images/Bitmap.png);
+            }
+        }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1340px) {
+    header {
+            @include sizing (768px, 700px);
+            margin: 0 auto;
+    
+            .header {
+                @include sizing (768px, 700px);
+                display: flex;
+                justify-content: space-between;
+                background-image: url(./images/Background.png);
+                background-size: cover;
+                background-position: center;
+                padding: 46px 50px;
+    
+                .header-logo {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+    
+                .button-group {
+                    margin-top: 4px;
+                    margin-right: 0;
+    
+                    .login {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #FFFFFF;
+                        text-decoration: none;
+                        border-radius: 40px;
+                        padding: 7px 16px;
+                    }
+    
+                    .signup {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #FFFFFF;
+                        text-decoration: none;
+                        border: 2px solid white;
+                        border-radius: 40px;
+                        padding: 7px 16px;
+                    }
+                }
+            }
+    
+            .header-text {
+                margin: -475px 90px;
+                box-sizing: border-box;
+    
+                .header-text-heading {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    h1 {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 52px;
+                        line-height: 63px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        margin-bottom: 28px;
+                    }
+    
+                    .header-text-light {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 24px;
+                        line-height: 24px;
+                        color: #FFFFFF;
+                    }
+                }
+    
+                .button-main {
+                    @include sizing (225px, 40px);
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    background: #FF4E50;
+                    border-radius: 40px;
+                    padding: 12px 19px;
+                    border: none;
+                    margin-top: 33px;
+                    margin-left: 182px;
+                }
+            }
+        }
+    
+        main {
+            width: 768px;
+            padding: 95px 10px 0;
+            margin: 0 auto;
+    
+            .about {
+                text-align: center;
+    
+                h2 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #444444;
+                    letter-spacing: 0;
+                }
+    
+                .about-steps {
+                    margin-top: 35px;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .about-steps_step1 {
+                        @include sizing (236px, 400px);
+                        background-image: url(./images/Step\ 1\ image.png);
+                        background-size: cover;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: flex-start;
+                        box-sizing: border-box;
+                        padding: 16px 20px;
+                        border-radius: 4px;
+    
+                        .step-number {
+                            @include sizing (70px, 20px);
+                            background: #FF4E50;
+                            border-radius: 40px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 12px;
+                            letter-spacing: 2px;
+                            color: #FFFFFF;
+                            padding-top: 5px;
+                        }
+    
+                        h3 {
+                            margin-top: 45px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 14px;
+                            color: #FFFFFF;
+                            text-align: start;
+                        }
+    
+                        .about-steps-light-text {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: #E3E3E3;
+                            margin-top: 15px;
+                            padding-top: 15px;
+                            text-align: start;
+                        }
+                    }
+    
+                    .about-steps_step2 {
+                        @extend .about-steps_step1;
+                        background-image: url(./images/Step\ 2\ image.png);
+                        margin-left: 20px;
+                        h3{
+                            width: 150px;
+                            margin-top: 14px;
+                        }
+                        .about-steps-light-text {
+                            margin-top: 10px;
+                        }
+                    }
+    
+                    .about-steps_step3 {
+                        @extend .about-steps_step2;
+                        background-image: url(./images/Step\ 3\ image.png);
+                        h3{
+                            width: 200px;
+                            margin-top: 45px;
+                        }
+                        .about-steps-light-text {
+                            margin-top: 16px;
+                        }
+                    }
+                }
+            }
+    
+            .partners {
+                padding-top: 95px;
+                text-align: center;
+    
+                h2 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #444444;
+                    letter-spacing: 0;
+                }
+    
+                .persons {
+                    @include sizing (492px, 464px);
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin: 34px 128px 0;
+                    padding: 0;
+    
+                    .person1 {
+                        @include sizing (236px, 224px);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+    
+                        .avatar {
+                            @include sizing (120px, 120px);
+                            background-image: url(./images/avatar\ 1.png);
+                            background-size: cover;
+                            position: relative;
+                        }
+    
+                        .person-info {
+                            @include sizing (221px, 81px);
+                            margin-top: 17px;
+    
+                            .name {
+                                @include sizing (221px, 18px);
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #444444;
+                                margin-bottom: 20px;
+                            }
+    
+                            .add-info {
+                                @include sizing (221px, 57px);
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 14px;
+                                line-height: 14px;
+                                color: #666666;
+                            }
+                        }
+                    }
+    
+                    .person2 {
+                        @extend .person1;
+    
+                        .avatar {
+                            background-image: url(./images/avatar\ 3.png);
+                        }
+    
+                        margin-left: 20px;
+                    }
+    
+                    .person3 {
+                        @extend .person2;
+                        margin-top: 35px;
+    
+                        .avatar {
+                            background-image: url(./images/avatar\ 2.png);
+                        }
+    
+                        margin-left: 0;
+    
+                        .person-info {
+                            .add-info {
+                                padding-top: 5px;
+                            }
+                        }
+                    }
+    
+                    .person4 {
+                        @extend .person3;
+    
+                        .avatar {
+                            background-image: url(./images/avatar\ 4.png);
+                        }
+    
+                    }
+                }
+    
+                .secondary-button {
+                    @include sizing (180px, 40px);
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FF4E50;
+                    background-color: #fff;
+                    border-radius: 40px;
+                    padding: 11px 19px;
+                    border: 2px solid #FF4E50;
+                    margin-top: 39px;
+                }
+            }
+    
+            .activity {
+                @include sizing (748px, 1031px);
+                margin-top: 95px;
+                text-align: center;
+    
+                h2 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #444444;
+                    letter-spacing: 0;
+                }
+    
+                .activity-pictures {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 35px;
+    
+                    .picture1 {
+                        @include sizing (236px, 310px);
+                        background-image: url(./images/photo\ 1.png);
+                        background-size: cover;
+                        background-position: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0 30px;
+                        border-radius: 4px;
+    
+                        h4 {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 22px;
+                            line-height: 27px;
+                            color: #FFFFFF;
+                        }
+                    }
+    
+                    .picture2 {
+                        @extend .picture1;
+                        background-image: url(./images/photo\ 2.png);
+                        margin-left: 20px;
+                    }
+    
+                    .picture3 {
+                        @extend .picture2;
+                        background-image: url(./images/photo\ 3.png);
+                        padding: 0 15px;
+                    }
+    
+                    .picture4 {
+                        @extend .picture1;
+                        background-image: url(./images/photo\ 4.png);
+                        margin-top: 20px;
+                    }
+    
+                    .picture5 {
+                        @extend .picture4;
+                        @include sizing (492px, 310px);
+                        background-image: url(./images/photo\ 5.png);
+                        background-size: cover;
+                        background-position: center;
+                        margin-left: 20px;
+                    }
+    
+                    .picture6 {
+                        @extend .picture5;
+                        background-image: url(./images/photo\ 6.png);
+                        margin-left: 0;
+                    }
+    
+                    .picture7 {
+                        @extend .picture4;
+                        background-image: url(./images/photo\ 7.png);
+                        background-size: cover;
+                        background-position: left;
+                        margin-left: 20px;
+                    }
+                }
+            }
+    
+            .form {
+                @include sizing (482px, 259px);
+                text-align: center;
+                margin: 94px 133px 0;
+    
+                h2 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #444444;
+                    letter-spacing: 0;
+                }
+    
+                .add-text {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 14px;
+                    color: #666666;
+                    margin-bottom: 25px;
+                }
+    
+                .search-form {
+                    width: 482px;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    input {
+                        width: 299px;
+                        height: 40px;
+                        box-sizing: border-box;
+                        background: #FFFFFF;
+                        border: 1px solid #D4D4D4;
+                        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+                        border-radius: 3px;
+                        padding-left: 15px;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #999999;
+                    }
+    
+                    .main-button {
+                        @include sizing (172px, 40px);
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #FFFFFF;
+                        background: #FF4E50;
+                        border-radius: 40px;
+                        padding: 12px 19px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    
+        footer {
+            @include sizing (768px, 260px);
+            margin: 0 auto;
+            padding: 36px 39px;
+            border-top: 2px solid #FF4E50;
+            display: flex;
+            justify-content: flex-start;
+    
+            .footer-logo {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FF4E50;
+                text-decoration: none;
+            }
+    
+            .company-nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                box-sizing: border-box;
+                margin-top: 2px;
+                margin-left: 110px;
+    
+                .text-bold {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #444444;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                }
+    
+                .text-light {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #999999;
+                    text-decoration: none;
+                }
+    
+            }
+    
+            .partners-nav {
+                margin-top: 2px;
+                margin-left: 100px;
+    
+                .text-bold {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #444444;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                }
+            }
+    
+            .designed-by {
+                display: flex;
+                flex-direction: column;
+                margin-top: 2px;
+                margin-left: 120px;
+    
+                .designed-by-text {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 12px;
+                    letter-spacing: 1px;
+                    color: #ccc;
+                    margin-bottom: 7px;
+                    align-self: flex-end;
+                }
+    
+                .designed-by-image {
+                    width: 110px;
+                    height: 24px;
+                    background-image: url(./images/Bitmap.png);
+                }
+            }
+        }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 760px) {
+    header {
+        @include sizing (320px, 540px);
+        margin: 0 auto;
+        background-image: url(./images/Background\ 2.png);
+        background-size: cover;
+        background-position: center;
+        padding: 25px 15px;
+
+        .header {
+            @include sizing (320px, 152px);
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+            background-image: none;
+            padding: 0;
+
+
+            .header-logo {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                text-decoration: none;
+                margin-left: -25px;
+            }
+
+            .button-group {
+                margin-top: 4px;
+                margin-right: 42px;
+
+                .login {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    border-radius: 40px;
+                    padding: 7px 16px;
+                }
+
+                .signup {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    border: 2px solid white;
+                    border-radius: 40px;
+                    padding: 7px 16px;
+                }
+            }
+        }
+
+        .header-text {
+            @include sizing (280px, 184px);
+            margin: 28px 5px;
+            box-sizing: border-box;
+            text-align: center;
+
+            .header-text-heading {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+
+                h1 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 37px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin-bottom: 5px;
+                }
+
+                .header-text-light {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+            }
+
+            .button-main {
+                @include sizing (280px, 40px);
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                background: #FF4E50;
+                border-radius: 40px;
+                padding: 12px 19px;
+                border: none;
+                margin-top: 15px;
+                margin-left: 0;
+            }
+        }
+    }
+   main {
+            width: 768px;
+            padding: 95px 10px 0;
+            margin: 0 auto;
+    
+            .about {
+                text-align: center;
+    
+                h2 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #444444;
+                    letter-spacing: 0;
+                }
+    
+                .about-steps {
+                    margin-top: 35px;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .about-steps_step1 {
+                        @include sizing (236px, 400px);
+                        background-image: url(./images/Step\ 1\ small.png);
+                        background-size: cover;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: flex-start;
+                        box-sizing: border-box;
+                        padding: 16px 20px;
+                        border-radius: 4px;
+    
+                        .step-number {
+                            @include sizing (70px, 20px);
+                            background: #FF4E50;
+                            border-radius: 40px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 12px;
+                            letter-spacing: 2px;
+                            color: #FFFFFF;
+                            padding-top: 5px;
+                        }
+    
+                        h3 {
+                            margin-top: 45px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 14px;
+                            color: #FFFFFF;
+                            text-align: start;
+                        }
+    
+                        .about-steps-light-text {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: #E3E3E3;
+                            margin-top: 15px;
+                            padding-top: 15px;
+                            text-align: start;
+                        }
+                    }
+    
+                    .about-steps_step2 {
+                        @extend .about-steps_step1;
+                        background-image: url(./images/Step\ 2\ small.png);
+                        margin-left: 20px;
+                        h3{
+                            width: 150px;
+                            margin-top: 14px;
+                        }
+                        .about-steps-light-text {
+                            margin-top: 10px;
+                        }
+                    }
+    
+                    .about-steps_step3 {
+                        @extend .about-steps_step2;
+                        background-image: url(./images/Step\ 3\ small.png);
+                        h3{
+                            width: 200px;
+                            margin-top: 45px;
+                        }
+                        .about-steps-light-text {
+                            margin-top: 16px;
+                        }
+                    }
+                }
+            }
+    
+            .partners {
+                padding-top: 95px;
+                text-align: center;
+    
+                h2 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #444444;
+                    letter-spacing: 0;
+                }
+    
+                .persons {
+                    @include sizing (300px, 955px);
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin: 36px 10px 0;
+                    padding: 0;
+    
+                    .person1 {
+                        @include sizing (236px, 224px);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+    
+                    .person2 {
+                        @extend .person1;
+    
+                        .avatar {
+                            background-image: url(./images/avatar\ 3.png);
+                        }
+    
+                        margin-left: 0;
+                    }
+    
+                    .person3 {
+                        @extend .person2;
+                        margin-top: 16px;
+    
+                        .avatar {
+                            background-image: url(./images/avatar\ 2.png);
+                        }
+    
+                        margin-left: 0;
+    
+                        .person-info {
+                            .add-info {
+                                padding-top: 5px;
+                            }
+                        }
+                    }
+    
+                    .person4 {
+                        @extend .person3;
+    
+                        .avatar {
+                            background-image: url(./images/avatar\ 4.png);
+                        }
+    
+                    }
+                }
+    
+                .secondary-button {
+                    @include sizing (280px, 40px);
+                    margin-top: 36px;
+                }
+            }
+    
+            .activity {
+                @include sizing (320px, 988px);
+                margin-top: 35px;
+                text-align: center;
+
+                .activity-pictures {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 16px;
+    
+                    .picture1 {
+                        @include sizing (300px, 120px);
+                        background-image: url(./images/Sport.png);
+                        padding: 0 47px;
+                    }
+    
+                    .picture2 {
+                        @extend .picture1;
+                        background-image: url(./images/Healath.png);
+                        margin-left: 0;
+                    }
+    
+                    .picture3 {
+                        @extend .picture2;
+                        background-image: url(./images/Extreme.png);
+                        padding: 0 15px;
+                    }
+    
+                    .picture4 {
+                        @extend .picture1;
+                        background-image: url(./images/Games.png);
+                        margin-top: 0;
+                    }
+    
+                    .picture5 {
+                        @extend .picture4;
+                        @include sizing (300px, 120px);
+                        background-image: url(./images/Culture.png);
+                        background-size: cover;
+                        background-position: center;
+                        margin-left: 0;
+                    }
+    
+                    .picture6 {
+                        @extend .picture5;
+                        background-image: url(./images/Culture\ Copy.png);
+                        margin-left: 0;
+                    }
+    
+                    .picture7 {
+                        @extend .picture4;
+                        background-image: url(./images/Games\ Copy.png);
+                        background-size: cover;
+                        background-position: left;
+                        margin-left: 0;
+                    }
+                }
+            }
+    
+            .form {
+                @include sizing (300px, 192px);
+                text-align: center;
+                margin: 36px 10px 0;
+    
+                h2 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #444444;
+                    letter-spacing: 0;
+                }
+    
+                .add-text {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 14px;
+                    color: #666666;
+                    margin-bottom: 15px;
+                }
+    
+                .search-form {
+                    width: 482px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .main-button {
+                        @include sizing (280px, 40px);
+                    }
+                }
+            }
+        }
+    
+        footer {
+            @include sizing (320px, 204px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .company-nav {
+                width: 200px;
+                display: flex;
+                flex-direction: row;
+                margin-left: 0;
+    
+                .text-bold {
+                    margin-right: 100px;
+                }
+    
+                .text-light {
+                    width: 60px;
+                }
+                .text-light-long{
+                    width: 126px;
+                }
+    
+            }
+    
+            .partners-nav {
+                margin-top: 5px;
+                margin-left: 0;
+            }
+    
+            .designed-by {
+                margin-top: 35px;
+                margin-left: 0;
+    
+                .designed-by-text {
+                    align-self: center;
+                }
+    
+                .designed-by-image {
+                    width: 110px;
+                    height: 24px;
+                    background-image: url(./images/Bitmap.png);
+                }
+            }
+        }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 760px) {
+    header {
+        @include sizing (320px, 540px);
+        margin: 0 auto;
+        background-image: url(./images/Background\ 2.png);
+        background-size: cover;
+        background-position: center;
+        padding: 25px 15px;
+
+        .header {
+            @include sizing (320px, 152px);
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+            background-image: none;
+            padding: 0;
+
+
+            .header-logo {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                text-decoration: none;
+                margin-left: -25px;
+            }
+
+            .button-group {
+                margin-top: 4px;
+                margin-right: 42px;
+
+                .login {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    border-radius: 40px;
+                    padding: 7px 16px;
+                }
+
+                .signup {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    border: 2px solid white;
+                    border-radius: 40px;
+                    padding: 7px 16px;
+                }
+            }
+        }
+
+        .header-text {
+            @include sizing (280px, 184px);
+            margin: 28px 5px;
+            box-sizing: border-box;
+            text-align: center;
+
+            .header-text-heading {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+
+                h1 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 37px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin-bottom: 5px;
+                }
+
+                .header-text-light {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+            }
+
+            .button-main {
+                @include sizing (280px, 40px);
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                background: #FF4E50;
+                border-radius: 40px;
+                padding: 12px 19px;
+                border: none;
+                margin-top: 15px;
+                margin-left: 0;
+            }
+        }
+    }
+
+    main {
+        width: 320px;
+        padding: 35px 10px 0;
+        margin: 0 auto;
+
+        .about {
+            @include sizing (300px, 782px);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .about-steps {
+                @include sizing (300px, 740px);
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .about-steps_step1 {
+                    @include sizing (300px, 240px);
+                    background-image: url(./images/Step\ 1\ small.png);
+
+                    .about-steps-light-text {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: #E3E3E3;
+                        margin-top: 10px;
+                        padding-top: 15px;
+                        text-align: start;
+                    }
+                }
+
+                .about-steps_step2 {
+                    @extend .about-steps_step1;
+                    background-image: url(./images/Step\ 2\ small.png);
+                    margin-left: 0;
+
+                    h3 {
+                        width: 200px;
+                        margin-top: 28px;
+                    }
+
+                    .about-steps-light-text {
+                        margin-top: 10px;
+                    }
+                }
+
+                .about-steps_step3 {
+                    @extend .about-steps_step2;
+                    background-image: url(./images/Step\ 3\ image.png);
+
+                    h3 {
+                        width: 200px;
+                        margin-top: 45px;
+                    }
+
+                    .about-steps-light-text {
+                        margin-top: 11px;
+                    }
+                }
+            }
+        }
+
+        .partners {
+            padding-top: 95px;
+            text-align: center;
+
+            h2 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+                color: #444444;
+                letter-spacing: 0;
+            }
+
+            .persons {
+                @include sizing (492px, 464px);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 34px 128px 0;
+                padding: 0;
+
+                .person1 {
+                    @include sizing (236px, 224px);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .avatar {
+                        @include sizing (120px, 120px);
+                        background-image: url(./images/avatar\ 1.png);
+                        background-size: cover;
+                        position: relative;
+                    }
+
+                    .person-info {
+                        @include sizing (221px, 81px);
+                        margin-top: 17px;
+
+                        .name {
+                            @include sizing (221px, 18px);
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #444444;
+                            margin-bottom: 20px;
+                        }
+
+                        .add-info {
+                            @include sizing (221px, 57px);
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: #666666;
+                        }
+                    }
+                }
+
+                .person2 {
+                    @extend .person1;
+
+                    .avatar {
+                        background-image: url(./images/avatar\ 3.png);
+                    }
+
+                    margin-left: 20px;
+                }
+
+                .person3 {
+                    @extend .person2;
+                    margin-top: 35px;
+
+                    .avatar {
+                        background-image: url(./images/avatar\ 2.png);
+                    }
+
+                    margin-left: 0;
+
+                    .person-info {
+                        .add-info {
+                            padding-top: 5px;
+                        }
+                    }
+                }
+
+                .person4 {
+                    @extend .person3;
+
+                    .avatar {
+                        background-image: url(./images/avatar\ 4.png);
+                    }
+
+                }
+            }
+
+            .secondary-button {
+                @include sizing (180px, 40px);
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FF4E50;
+                background-color: #fff;
+                border-radius: 40px;
+                padding: 11px 19px;
+                border: 2px solid #FF4E50;
+                margin-top: 39px;
+            }
+        }
+
+        .activity {
+            @include sizing (748px, 1031px);
+            margin-top: 95px;
+            text-align: center;
+
+            h2 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+                color: #444444;
+                letter-spacing: 0;
+            }
+
+            .activity-pictures {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 35px;
+
+                .picture1 {
+                    @include sizing (236px, 310px);
+                    background-image: url(./images/photo\ 1.png);
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 30px;
+                    border-radius: 4px;
+
+                    h4 {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 27px;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .picture2 {
+                    @extend .picture1;
+                    background-image: url(./images/photo\ 2.png);
+                    margin-left: 20px;
+                }
+
+                .picture3 {
+                    @extend .picture2;
+                    background-image: url(./images/photo\ 3.png);
+                    padding: 0 15px;
+                }
+
+                .picture4 {
+                    @extend .picture1;
+                    background-image: url(./images/photo\ 4.png);
+                    margin-top: 20px;
+                }
+
+                .picture5 {
+                    @extend .picture4;
+                    @include sizing (492px, 310px);
+                    background-image: url(./images/photo\ 5.png);
+                    background-size: cover;
+                    background-position: center;
+                    margin-left: 20px;
+                }
+
+                .picture6 {
+                    @extend .picture5;
+                    background-image: url(./images/photo\ 6.png);
+                    margin-left: 0;
+                }
+
+                .picture7 {
+                    @extend .picture4;
+                    background-image: url(./images/photo\ 7.png);
+                    background-size: cover;
+                    background-position: left;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .form {
+            @include sizing (482px, 259px);
+            text-align: center;
+            margin: 94px 133px 0;
+
+            h2 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+                color: #444444;
+                letter-spacing: 0;
+            }
+
+            .add-text {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 14px;
+                color: #666666;
+                margin-bottom: 25px;
+            }
+
+            .search-form {
+                width: 482px;
+                display: flex;
+                justify-content: space-between;
+
+                input {
+                    width: 299px;
+                    height: 40px;
+                    box-sizing: border-box;
+                    background: #FFFFFF;
+                    border: 1px solid #D4D4D4;
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+                    border-radius: 3px;
+                    padding-left: 15px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #999999;
+                }
+
+                .main-button {
+                    @include sizing (172px, 40px);
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    background: #FF4E50;
+                    border-radius: 40px;
+                    padding: 12px 19px;
+                    border: none;
+                }
+            }
+        }
+
+        footer {
+            @include sizing (768px, 260px);
+            margin: 0 auto;
+            padding: 36px 39px;
+            border-top: 2px solid #FF4E50;
+            display: flex;
+            justify-content: flex-start;
+
+            .footer-logo {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FF4E50;
+                text-decoration: none;
+            }
+
+            .company-nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                box-sizing: border-box;
+                margin-top: 2px;
+                margin-left: 110px;
+
+                .text-bold {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #444444;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                }
+
+                .text-light {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #999999;
+                    text-decoration: none;
+                }
+
+            }
+
+            .partners-nav {
+                margin-top: 2px;
+                margin-left: 100px;
+
+                .text-bold {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #444444;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .designed-by {
+                display: flex;
+                flex-direction: column;
+                margin-top: 2px;
+                margin-left: 120px;
+
+                .designed-by-text {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 12px;
+                    letter-spacing: 1px;
+                    color: #ccc;
+                    margin-bottom: 7px;
+                    align-self: flex-end;
+                }
+
+                .designed-by-image {
+                    width: 110px;
+                    height: 24px;
+                    background-image: url(./images/Bitmap.png);
+                }
+            }
+        }
+
+    }
+}
